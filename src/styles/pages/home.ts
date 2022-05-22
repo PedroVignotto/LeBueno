@@ -1,19 +1,21 @@
 import { colors } from '../global/colors'
 
+import { darken } from 'polished'
 import styled from 'styled-components'
 
-export const Container = styled.div`
+export const HeroContainer = styled.div`
   display: flex;
-  align-items: center;
-  max-width: 1200px;
-  margin: 5rem auto 0 auto;
+  flex-direction: column;
+  max-width: 1100px;
+  margin: 0 auto;
   padding: 0 1rem;
 `
 
-export const Hero = styled.main`
+export const HeroContent = styled.main`
   display: flex;
   gap: 2.25rem;
   flex: 1;
+  margin-top: 5rem;
 
   section {
     display: flex;
@@ -54,11 +56,145 @@ export const Hero = styled.main`
   @media (max-width: 1000px) {
     flex-direction: column-reverse;
     align-items: center;
+    margin-top: 2.5rem;
   }
 
   @media (max-width: 350px) {
     h2 {
       background-image: none !important;
+    }
+  }
+`
+
+export const BackgroundAbout = styled.div`
+  display: block;
+  width: 100%;
+  height: 16rem;
+  margin-top: 8rem;
+  background-color: ${colors.black};
+  background-size: 100px 100px !important;
+  background-position: top !important;
+
+  @media (max-width: 1000px) {
+    height: 12rem;
+    margin-top: 6rem;
+  }
+`
+
+export const AboutContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  max-width: 1100px;
+  margin: -3rem auto 0 auto;
+  padding: 0 1rem;
+`
+
+export const AboutContent = styled.div`
+  display: flex;
+  gap: 2.25rem;
+  margin-top: -5rem;
+
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-basis: 60%;
+
+
+    .about-me-title {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+
+      h3 {
+        font-size: 2rem;
+        font-weight: 400;
+        color: ${colors.white};
+        letter-spacing: 1.8px;
+        margin-top: 1rem;
+      }
+
+      h4 {
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: 400;
+        color: ${colors.white};
+        letter-spacing: 1.8px;
+      }
+    }
+
+    .about-me-text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+
+      p {
+        font-size: 1rem;
+        text-align: justify;
+        font-weight: 400;
+        color: ${colors.black};
+        letter-spacing: 1.8px;
+
+        + p {
+          margin-top: 1rem;
+        }
+      }
+    }
+
+    button {
+      margin-top: 2rem;
+      text-transform: uppercase;
+      font-size: 0.875rem;
+      font-weight: 400;
+      letter-spacing: 1.8px;
+      color: ${colors.black};
+      background: ${colors.blue};
+      border: 1px solid ${colors.black};
+      padding: 1rem;
+      width: auto;
+
+      &:hover {
+        background: ${darken(0.07, colors.blue)}
+      }
+    }
+  }
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    align-items: center;
+
+    section {
+      margin-top: 1rem;
+      width: 60%;
+
+      .about-me-text {
+        margin-top: 4rem;
+      }
+    }
+
+    aside {
+      display: none;
+    }
+  }
+
+  @media (max-width: 720px) {
+    section {
+      width: 80%;
+    }
+  }
+
+  @media (max-width: 500px) {
+    section {
+      width: 100%;
+      padding: 0 1rem;
+    }
+  }
+
+  @media (max-width: 390px) {
+    section {
+      margin-top: -1rem;
     }
   }
 `
