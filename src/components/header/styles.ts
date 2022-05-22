@@ -13,7 +13,7 @@ export const HeaderContent = styled.div<Props>`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1200px;
+  max-width: 1100px;
   height: 6rem;
   margin: 0 auto;
   padding: 0 1rem;
