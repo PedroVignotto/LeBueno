@@ -1,4 +1,9 @@
+import Head from 'next/head'
 
 export default function Home() {
-  return <h1>fé</h1>
+  return (
+    <Head>
+      <title>Início ✽ Letícia Bueno</title>
+    </Head>
+  )
 }
