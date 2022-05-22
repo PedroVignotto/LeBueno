@@ -129,11 +129,5 @@ export const HeaderContent = styled.div<Props>`
       }
     }
   }
-
-  @media (max-width: 420px) {
-    img {
-      display: none !important;
-    }
-  }
 `
 

@@ -9,7 +9,7 @@ export function Header() {
   return (
     <HeaderContainer>
       <HeaderContent visible={visible}>
-        <Image src="/images/logo-horizontal.svg" alt="Letícia Bueno" width={420} height={35} />
+        <Image src="/images/logo-letter-black.svg" alt="Letícia Bueno" width={46} height={35} />
         <button onClick={() => setVisible(!visible)}><span id="bars"></span></button>
         <nav>
           <a href="#">início</a>
