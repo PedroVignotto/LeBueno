@@ -1,6 +1,6 @@
 import { colors } from '../../styles/colors'
 
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 
 export const HeaderContainer = styled.header`
   height: 6rem;
@@ -13,7 +13,7 @@ export const HeaderContent = styled.div<Props>`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1400px;
+  max-width: 1200px;
   height: 6rem;
   margin: 0 auto;
   padding: 0 1rem;
@@ -53,7 +53,7 @@ export const HeaderContent = styled.div<Props>`
     }
   }
 
-  @media (max-width: 1080px) {
+  @media (max-width: 610px) {
     button {
       display: flex;
       margin-left: 1rem;
@@ -71,7 +71,7 @@ export const HeaderContent = styled.div<Props>`
       &::after, &::before {
         content: '';
         display: block;
-        position: ${({ visible }) => visible ? 'relative' : ''  };
+        position: ${({ visible }) => visible ? 'relative' : '' };
         width: 20px;
         height: 2px;
         background: currentColor;
@@ -81,12 +81,12 @@ export const HeaderContent = styled.div<Props>`
       }
 
       &::after {
-        transform: ${({ visible }) => visible ? 'rotate(-135deg)' : 'rotate(0)'  };
+        transform: ${({ visible }) => visible ? 'rotate(-135deg)' : 'rotate(0)' };
         top: -7px;
       }
 
       &::before {
-        transform: ${({ visible }) => visible ? 'rotate(135deg)' : 'rotate(0)'  };
+        transform: ${({ visible }) => visible ? 'rotate(135deg)' : 'rotate(0)' };
       }
     }
 
