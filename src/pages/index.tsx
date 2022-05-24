@@ -1,6 +1,6 @@
 import { Button } from '../components'
 
-import { HeroContainer, HeroContent, BackgroundAbout, AboutContainer, AboutContent, ServiceContainer, ServiceContent } from '../styles/pages/home'
+import { Hero, HeroContent, BackgroundAbout, About, AboutContent, Service, ServiceContent } from '../styles/pages/home'
 
 import Head from 'next/head'
 import Image from 'next/image'
@@ -11,7 +11,7 @@ export default function Home() {
       <Head>
         <title>Início ✽ Letícia Bueno</title>
       </Head>
-      <HeroContainer>
+      <Hero>
         <HeroContent>
           <aside>
             <Image src="/images/banner-hero.jpg" alt="Home office" width={500} height={550} />
@@ -22,9 +22,9 @@ export default function Home() {
             <h2>Vamos criar o <span>universo visual</span><br /> da sua marca juntas?</h2>
           </section>
         </HeroContent>
-      </HeroContainer>
+      </Hero>
       <BackgroundAbout />
-      <AboutContainer>
+      <About>
         <AboutContent>
           <section>
             <div className='about-me-title'>
@@ -41,8 +41,8 @@ export default function Home() {
             <Image src="/images/photo-profile.png" alt="Eu" width={500} height={550} />
           </aside>
         </AboutContent>
-      </AboutContainer>
-      <ServiceContainer>
+      </About>
+      <Service>
         <ServiceContent>
           <div>
             <Image src="/images/logo-symbol-black.svg" alt="Simbolo" width={30} height={30} />
@@ -61,7 +61,7 @@ export default function Home() {
           </ul>
           <Button>saber mais</Button>
         </ServiceContent>
-      </ServiceContainer>
+      </Service>
     </>
   )
 }

@@ -3,7 +3,7 @@ import { colors } from '../global/colors'
 import { darken } from 'polished'
 import styled from 'styled-components'
 
-export const HeroContainer = styled.div`
+export const Hero = styled.div`
   display: flex;
   flex-direction: column;
   max-width: 1100px;
@@ -81,7 +81,7 @@ export const BackgroundAbout = styled.div`
   }
 `
 
-export const AboutContainer = styled.div`
+export const About = styled.div`
   display: flex;
   flex-direction: column;
   max-width: 1100px;
@@ -186,7 +186,7 @@ export const AboutContent = styled.div`
   }
 `
 
-export const ServiceContainer = styled.div`
+export const Service = styled.div`
   border-top: 1px solid ${colors.black};
   margin-top: 5rem;
 `
