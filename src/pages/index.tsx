@@ -1,6 +1,6 @@
 import { Button } from '../components'
 
-import { Hero, HeroContent, BackgroundAbout, About, AboutContent, Service, ServiceContent } from '../styles/pages/home'
+import { Hero, HeroContent, BackgroundAbout, About, AboutContent, Service, ServiceContent, Instagram, InstagramContent } from '../styles/pages/home'
 
 import Head from 'next/head'
 import Image from 'next/image'
@@ -62,6 +62,25 @@ export default function Home() {
           <Button>saber mais</Button>
         </ServiceContent>
       </Service>
+      <Instagram>
+        <InstagramContent>
+          <h3>acompanhe meu dia a dia no instagram: </h3>
+          <div>
+            <a href="https://www.instagram.com/p/CZR2sWYM_ce/" target="_blank" rel="noreferrer">
+              <Image src="/images/instagram-project.png" alt="Projetos no instagram" width={250} height={250} />
+            </a>
+            <a href="https://www.instagram.com/p/CZR2sWYM_ce/" target="_blank" rel="noreferrer">
+              <Image src="/images/instagram-project.png" alt="Projetos no instagram" width={250} height={250} />
+            </a>
+            <a href="https://www.instagram.com/p/CZR2sWYM_ce/" target="_blank" rel="noreferrer">
+              <Image src="/images/instagram-project.png" alt="Projetos no instagram" width={250} height={250} />
+            </a>
+            <a href="https://www.instagram.com/p/CZR2sWYM_ce/" target="_blank" rel="noreferrer">
+              <Image src="/images/instagram-project.png" alt="Projetos no instagram" width={250} height={250} />
+            </a>
+          </div>
+        </InstagramContent>
+      </Instagram>
     </>
   )
 }
