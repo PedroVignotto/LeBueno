@@ -82,7 +82,7 @@ export const Content = styled.div`
     flex-basis: 20%;
 
     a {
-      background: ${colors.pink};
+      background: ${colors.blue};
       border: 1px solid ${colors.black};
       border-radius: 100%;
       padding: 0.25rem;
