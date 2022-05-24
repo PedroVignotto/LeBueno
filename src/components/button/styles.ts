@@ -4,7 +4,6 @@ import { darken } from 'polished'
 import styled from 'styled-components'
 
 export const Container = styled.button`
-  margin-top: 2rem;
   text-transform: uppercase;
   font-size: 0.875rem;
   font-weight: 400;
