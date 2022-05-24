@@ -59,9 +59,23 @@ export const HeroContent = styled.main`
     margin-top: 2.5rem;
   }
 
-  @media (max-width: 350px) {
-    h2 {
-      background-image: none !important;
+  @media (max-width: 436px) {
+    section {
+      h1 {
+        font-size: 1.25rem;
+      }
+
+      h2 {
+        font-size: 1.14rem;
+      }
+    }
+  }
+
+  @media (max-width: 339px) {
+    section {
+      h2 {
+        background-image: none;
+      }
     }
   }
 `
@@ -72,8 +86,8 @@ export const BackgroundAbout = styled.div`
   height: 16rem;
   margin-top: 8rem;
   background-color: ${colors.black};
-  background-size: 100px 100px !important;
-  background-position: top !important;
+  background-size: 100px 100px;
+  background-position: top;
 
   @media (max-width: 1000px) {
     height: 12rem;
@@ -108,7 +122,7 @@ export const AboutContent = styled.div`
       justify-content: center;
 
       h3 {
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-weight: 400;
         color: ${colors.white};
         letter-spacing: 1.8px;
@@ -116,7 +130,7 @@ export const AboutContent = styled.div`
       }
 
       h4 {
-        font-size: 1rem;
+        font-size: 0.875rem;
         text-transform: uppercase;
         font-weight: 400;
         color: ${colors.white};
@@ -179,7 +193,14 @@ export const AboutContent = styled.div`
     }
   }
 
-  @media (max-width: 390px) {
+  @media (max-width: 397px) {
+    section {
+      .about-me-title {
+      }
+    }
+  }
+
+  @media (max-width: 325px) {
     section {
       margin-top: -1rem;
     }
@@ -246,6 +267,12 @@ export const ServiceContent = styled.section`
           font-size: 1rem;
         }
       }
+    }
+  }
+
+  @media (max-width: 249px) {
+    ul {
+      align-items: flex-start;
     }
   }
 `
