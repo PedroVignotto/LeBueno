@@ -1,4 +1,4 @@
-import { HeaderContainer, HeaderContent } from './styles'
+import { Container, Content } from './styles'
 
 import Image from 'next/image'
 import { useState } from 'react'
@@ -7,8 +7,8 @@ export function Header() {
   const [visible, setVisible] = useState(false)
 
   return (
-    <HeaderContainer>
-      <HeaderContent visible={visible}>
+    <Container>
+      <Content visible={visible}>
         <Image src="/images/logo-letter-black.svg" alt="Letícia Bueno" width={46} height={35} />
         <button onClick={() => setVisible(!visible)}><span id="bars"></span></button>
         <nav>
@@ -19,7 +19,7 @@ export function Header() {
           <a href="#">orçamento</a>
           <a href="#">contato</a>
         </nav>
-      </HeaderContent>
-    </HeaderContainer>
+      </Content>
+    </Container>
   )
 }

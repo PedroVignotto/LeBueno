@@ -2,14 +2,14 @@ import { colors } from '../../styles/global/colors'
 
 import styled from 'styled-components'
 
-export const HeaderContainer = styled.header`
+export const Container = styled.header`
   height: 6rem;
   border-bottom: 1px solid ${colors.black};
 `
 
 type Props = { visible: boolean }
 
-export const HeaderContent = styled.div<Props>`
+export const Content = styled.div<Props>`
   display: flex;
   align-items: center;
   justify-content: space-between;
