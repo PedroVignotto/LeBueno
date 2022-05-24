@@ -15,7 +15,7 @@ export function Header() {
           <a href="#">início</a>
           <a href="#">sobre</a>
           <a href="#">serviços</a>
-          <a href="#">depoimentos</a>
+          <a href="#">portfólio</a>
           <a href="#">orçamento</a>
           <a href="#">contato</a>
         </nav>
