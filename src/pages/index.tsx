@@ -1,4 +1,6 @@
-import { HeroContainer, HeroContent, BackgroundAbout, AboutContainer, AboutContent } from '../styles/pages/home'
+import { Button } from '../components'
+
+import { HeroContainer, HeroContent, BackgroundAbout, AboutContainer, AboutContent, ServiceContainer, ServiceContent } from '../styles/pages/home'
 
 import Head from 'next/head'
 import Image from 'next/image'
@@ -33,13 +35,33 @@ export default function Home() {
               <p>Sou uma empreendedora e designer de marcas afetivas há quase 4 anos. Amo trabalhar com marcas de mulheres inspiradoras e únicas.</p>
               <p>Meu foco com design envolve não só inspiração e criatividade, mas também expressar de forma simbólica o desejo de crescer e transformar aquela ideia em realidade com muito carinho.</p>
             </div>
-            <button>mais sobre mim</button>
+            <Button>mais sobre mim</Button>
           </section>
           <aside>
             <Image src="/images/photo-profile.png" alt="Eu" width={500} height={550} />
           </aside>
         </AboutContent>
       </AboutContainer>
+      <ServiceContainer>
+        <ServiceContent>
+          <div>
+            <Image src="/images/logo-symbol-black.svg" alt="Simbolo" width={30} height={30} />
+            <h3>serviços</h3>
+          </div>
+          <ul>
+            <li>
+              <p>identidade <span>visual</span></p>
+            </li>
+            <li>
+              <p><span>criativos</span> redes sociais</p>
+            </li>
+            <li>
+              <p>artes itens <span>papelaria</span></p>
+            </li>
+          </ul>
+          <Button>saber mais</Button>
+        </ServiceContent>
+      </ServiceContainer>
     </>
   )
 }

@@ -145,19 +145,6 @@ export const AboutContent = styled.div`
 
     button {
       margin-top: 2rem;
-      text-transform: uppercase;
-      font-size: 0.875rem;
-      font-weight: 400;
-      letter-spacing: 1.8px;
-      color: ${colors.black};
-      background: ${colors.blue};
-      border: 1px solid ${colors.black};
-      padding: 1rem;
-      width: auto;
-
-      &:hover {
-        background: ${darken(0.07, colors.blue)}
-      }
     }
   }
 
@@ -195,6 +182,70 @@ export const AboutContent = styled.div`
   @media (max-width: 390px) {
     section {
       margin-top: -1rem;
+    }
+  }
+`
+
+export const ServiceContainer = styled.div`
+  border-top: 1px solid ${colors.black};
+  margin-top: 5rem;
+`
+
+export const ServiceContent = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 1100px;
+  height: 400px;
+  margin: 2.5rem auto 0 auto;
+  padding: 0 1rem;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+      font-size: 0.875rem;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: ${colors.black};
+      letter-spacing: 1.8px;
+      margin-top: 1rem;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    li {
+      p {
+        font-size: 1.25rem;
+        font-weight: 400;
+        color: ${colors.black};
+        letter-spacing: 1.8px;
+
+        span {
+          font-style: italic;
+        }
+      }
+
+      + li {
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  @media (max-width: 300px) {
+    ul {
+      li {
+        p {
+          font-size: 1rem;
+        }
+      }
     }
   }
 `
