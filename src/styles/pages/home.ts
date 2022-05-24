@@ -232,7 +232,6 @@ export const ServiceContent = styled.section`
       text-transform: uppercase;
       font-weight: 600;
       color: ${colors.black};
-      letter-spacing: 1.8px;
       margin-top: 1rem;
     }
   }
@@ -288,7 +287,7 @@ export const InstagramContent = styled.section`
   align-items: center;
   justify-content: center;
   max-width: 1100px;
-  margin: 2.5rem auto;
+  margin: 2.5rem auto 0 auto;
   padding: 0 1rem;
 
   h3 {
@@ -304,6 +303,7 @@ export const InstagramContent = styled.section`
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
     margin: 2.5rem 0;
+    width: 100%;
 
     a {
       max-width: 250px;
@@ -318,10 +318,11 @@ export const InstagramContent = styled.section`
   @media (max-width: 1000px) {
     div {
       grid-template-columns: repeat(2, 1fr);
+      width: auto;
     }
   }
 
-  @media (max-width: 570px) {
+  @media (max-width: 500px) {
     div {
       grid-template-columns: repeat(1, 1fr);
     }
