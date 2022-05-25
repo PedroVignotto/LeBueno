@@ -18,6 +18,11 @@ export const Content = styled.div<Props>`
   margin: 0 auto;
   padding: 0 1rem;
 
+  img {
+    height: 45px !important;
+    cursor: pointer;
+  }
+
   button {
     display: none;
   }

@@ -1,5 +1,6 @@
 import { Container, Content } from './styles'
 
+import Link from 'next/link'
 import Image from 'next/image'
 import { useState } from 'react'
 
@@ -9,7 +10,7 @@ export function Header() {
   return (
     <Container id="header">
       <Content visible={visible}>
-        <Image src="/images/logo-letter-black.svg" alt="Letícia Bueno" width={46} height={35} />
+        <Link href="/"><Image src="/images/logo-letter-black.svg" alt="Letícia Bueno" width={46} height={35} /></Link>
         <button onClick={() => setVisible(!visible)}><span id="bars"></span></button>
         <nav>
           <a href="#">início</a>
