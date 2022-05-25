@@ -1,6 +1,6 @@
 import { Footer, Header } from '../components'
 
-import { GlobalStyle } from '../styles/global/global'
+import { GlobalStyle } from '../styles/global'
 
 import { AppProps } from 'next/app'
 

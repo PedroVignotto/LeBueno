@@ -1,4 +1,4 @@
-import { colors } from '../../styles/global/colors'
+import { colors } from '../../styles/global'
 
 import { darken } from 'polished'
 import styled from 'styled-components'
