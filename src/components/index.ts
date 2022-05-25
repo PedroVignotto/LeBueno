@@ -1,4 +1,4 @@
-export * from './header'
-export * from './button'
-export * from './footer'
-export * from './instagram'
+export { Header } from './header'
+export { Button } from './button'
+export { Footer } from './footer'
+export { Instagram } from './instagram'
