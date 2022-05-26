@@ -52,6 +52,12 @@ export const HeroContent = styled.main`
     }
   }
 
+  aside {
+    img {
+      border: 1px solid ${colors.black} !important;
+    }
+  }
+
   @media (max-width: 1000px) {
     flex-direction: column-reverse;
     align-items: center;
@@ -158,6 +164,12 @@ export const AboutContent = styled.div`
 
     button {
       margin-top: 2rem;
+    }
+  }
+
+  aside {
+    img {
+      border: 1px solid ${colors.black} !important;
     }
   }
 
