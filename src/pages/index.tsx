@@ -15,10 +15,10 @@ export default function Home() {
       <Hero>
         <HeroContent>
           <aside>
-            <Image src="/images/banner-hero.jpg" alt="Home office" width={500} height={550} />
+            <Image src="/images/general/banner-hero.jpg" alt="Home office" width={500} height={550} />
           </aside>
           <section>
-            <Image src="/images/logo-symbol-black.svg" alt="Simbolo" width={30} height={30} />
+            <Image src="/images/logo/symbol-black.svg" alt="Simbolo" width={30} height={30} />
             <h1>design <span>afetivo, delicado &<br /> singular</span> para empreendedoras<br /> apaixonadas e com propósitos</h1>
             <h2>Vamos criar o <span>universo visual</span><br /> da sua marca juntas?</h2>
           </section>
@@ -41,14 +41,14 @@ export default function Home() {
             </Link>
           </section>
           <aside>
-            <Image src="/images/photo-profile-1.jpg" alt="Eu" width={500} height={550} />
+            <Image src="/images/photos/profile-1.jpg" alt="Eu" width={500} height={550} />
           </aside>
         </AboutContent>
       </About>
       <Service>
         <ServiceContent>
           <div>
-            <Image src="/images/logo-symbol-black.svg" alt="Simbolo" width={30} height={30} />
+            <Image src="/images/logo/symbol-black.svg" alt="Simbolo" width={30} height={30} />
             <h3>serviços</h3>
           </div>
           <ul>

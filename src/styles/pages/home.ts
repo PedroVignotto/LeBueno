@@ -41,7 +41,7 @@ export const HeroContent = styled.main`
       font-weight: 400;
       color: ${colors.black};
       letter-spacing: 1.8px;
-      background-image: url('images/border.svg');
+      background-image: url('images/general/border.svg');
       background-size: 52%;
       background-position: right 0 top 0;
       background-repeat: no-repeat;
