@@ -1,5 +1,6 @@
 import { colors } from '../global'
 
+import { darken } from 'polished'
 import styled from 'styled-components'
 
 export const Wellcome = styled.div`
@@ -84,6 +85,57 @@ export const AboutMeContent = styled.section`
       + article {
         flex-direction: column-reverse;
       }
+    }
+  }
+`
+
+export const Values = styled.div`
+  border-top: 1px solid ${colors.black};
+`
+
+export const ValuesContent = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1100px;
+  margin: 2.5rem auto;
+  padding: 0 1rem;
+
+  h3 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: ${colors.black};
+    letter-spacing: 1.8px;
+    margin-bottom: 2.5rem;
+  }
+
+  div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem 2rem;
+
+    button {
+      text-transform: lowercase;
+      background: ${colors.pink};
+      font-style: italic;
+      cursor: auto;
+
+      &:hover {
+        background: ${darken(0.07, colors.pink)};
+      }
+    }
+  }
+
+  @media (max-width: 540px) {
+    div {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 380px) {
+    div {
+      grid-template-columns: repeat(1, 1fr);
     }
   }
 `

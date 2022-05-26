@@ -1,6 +1,6 @@
-import { Instagram } from '../components'
+import { Button, Instagram } from '../components'
 
-import { Wellcome, WellcomeContent, AboutMe, AboutMeContent } from '../styles/pages/about'
+import { Wellcome, WellcomeContent, AboutMe, AboutMeContent, Values, ValuesContent } from '../styles/pages/about'
 
 import Head from 'next/head'
 import Image from 'next/image'
@@ -36,6 +36,19 @@ export default function About() {
           </article>
         </AboutMeContent>
       </AboutMe>
+      <Values>
+        <ValuesContent>
+          <h3>valores</h3>
+          <div>
+            <Button>criatividade</Button>
+            <Button>singularidade</Button>
+            <Button>sinceridade</Button>
+            <Button>autenticidade</Button>
+            <Button>qualidade</Button>
+            <Button>sensibilidade</Button>
+          </div>
+        </ValuesContent>
+      </Values>
       <Instagram />
     </>
   )
