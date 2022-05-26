@@ -56,10 +56,10 @@ export default function Home() {
               <p>identidade <span>visual</span></p>
             </li>
             <li>
-              <p><span>criativos</span> redes sociais</p>
+              <p>artes itens <span>papelaria</span></p>
             </li>
             <li>
-              <p>artes itens <span>papelaria</span></p>
+              <p><span>criativos</span> redes sociais</p>
             </li>
           </ul>
           <Button>saber mais</Button>

@@ -28,7 +28,7 @@ export default function About() {
           </article>
           <article>
             <div>
-              <p>Comecei a ter mais tempo para me dedicar com o que amo e que tenho confiança em fazer (sem contar o conforto de trabalhar em casa com minhas calças moletom). Me aperfeiçoando e buscando ajudar marcas a transmitirem sua mensagem ao mundo, a sua essência, seu universo visual de forma criativa e afetiva.</p>
+              <p>Comecei a ter mais tempo para me dedicar com o que amo e que tenho confiança em fazer <span>(sem contar o conforto de trabalhar em casa com minhas calças moletom)</span>. Me aperfeiçoando e buscando ajudar marcas a transmitirem sua mensagem ao mundo, a sua essência, seu universo visual de forma criativa e afetiva.</p>
               <p>Criatividade é um exercício que amo praticar todos os dias, assim como uma <span>(duas, três e contando)</span> boa xícara de café.</p>
               <p>O prazer seria todo meu poder compartilhá-los com você. Ah, e caso o café não seja o seu favorito, temos café também. Digo, chá!</p>
             </div>
