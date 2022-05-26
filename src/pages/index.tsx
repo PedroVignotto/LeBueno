@@ -41,7 +41,7 @@ export default function Home() {
             </Link>
           </section>
           <aside>
-            <Image src="/images/photo-profile.png" alt="Eu" width={500} height={550} />
+            <Image src="/images/photo-profile-1.jpg" alt="Eu" width={500} height={550} />
           </aside>
         </AboutContent>
       </About>
