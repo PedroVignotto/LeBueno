@@ -2,6 +2,7 @@ import { Button, Instagram } from '../components'
 
 import { Hero, HeroContent, BackgroundAbout, About, AboutContent, Service, ServiceContent } from '../styles/pages/home'
 
+import Link from 'next/link'
 import Head from 'next/head'
 import Image from 'next/image'
 
@@ -35,7 +36,9 @@ export default function Home() {
               <p>Sou uma empreendedora e designer de marcas afetivas há quase 4 anos. Amo trabalhar com marcas de mulheres inspiradoras e únicas.</p>
               <p>Meu foco com design envolve não só inspiração e criatividade, mas também expressar de forma simbólica o desejo de crescer e transformar aquela ideia em realidade com muito carinho.</p>
             </div>
-            <Button>mais sobre mim</Button>
+            <Link href="/about">
+              <a><Button>mais sobre mim</Button></a>
+            </Link>
           </section>
           <aside>
             <Image src="/images/photo-profile.png" alt="Eu" width={500} height={550} />
