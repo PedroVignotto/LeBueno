@@ -91,8 +91,6 @@ export const BackgroundAbout = styled.div`
   height: 16rem;
   margin-top: 8rem;
   background-color: ${colors.black};
-  background-size: 100px 100px;
-  background-position: top;
 
   @media (max-width: 1000px) {
     height: 12rem;
@@ -177,7 +175,7 @@ export const AboutContent = styled.section`
     flex-direction: column;
     align-items: center;
 
-    section {
+    article {
       margin-top: 1rem;
       width: 60%;
 
@@ -192,27 +190,20 @@ export const AboutContent = styled.section`
   }
 
   @media (max-width: 720px) {
-    section {
+    article {
       width: 80%;
     }
   }
 
   @media (max-width: 500px) {
-    section {
+    article {
       width: 100%;
       padding: 0 1rem;
     }
   }
 
-  @media (max-width: 397px) {
-    section {
-      .about-me-title {
-      }
-    }
-  }
-
   @media (max-width: 325px) {
-    section {
+    article {
       margin-top: -1rem;
     }
   }
