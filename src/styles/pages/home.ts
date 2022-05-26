@@ -108,12 +108,12 @@ export const About = styled.div`
   padding: 0 1rem;
 `
 
-export const AboutContent = styled.div`
+export const AboutContent = styled.section`
   display: flex;
   gap: 2.25rem;
   margin-top: -5rem;
 
-  section {
+  article {
     display: flex;
     flex-direction: column;
     align-items: flex-start;

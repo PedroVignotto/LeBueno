@@ -27,7 +27,7 @@ export default function Home() {
       <BackgroundAbout />
       <About>
         <AboutContent>
-          <section>
+          <article>
             <div className='about-me-title'>
               <h3>Oi, eu sou a Letícia!</h3>
               <h4>conheça a designer</h4>
@@ -39,7 +39,7 @@ export default function Home() {
             <Link href="/about">
               <a><Button>mais sobre mim</Button></a>
             </Link>
-          </section>
+          </article>
           <aside>
             <Image src="/images/photos/profile-1.jpg" alt="Eu" width={500} height={550} />
           </aside>
