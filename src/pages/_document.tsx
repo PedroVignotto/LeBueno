@@ -6,6 +6,7 @@ export default class MyDocument extends Document {
       <Html>
         <Head>
           <link rel="stylesheet" href="https://use.typekit.net/cqg0chn.css" />
+          <link rel="shortcut icon" href="/images/favicon.svg" type="image/svg" />
         </Head>
         <body>
           <Main />
