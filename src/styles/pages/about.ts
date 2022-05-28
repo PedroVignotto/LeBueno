@@ -44,7 +44,7 @@ export const Main = styled.main`
         text-align: justify;
         font-weight: 400;
         color: ${colors.black};
-        letter-spacing: 1.8px;
+        letter-spacing: 1px;
 
         + p {
           margin-top: 1rem;
