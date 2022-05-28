@@ -15,7 +15,7 @@ export function Header() {
         <nav>
           <Link href="/"><a onClick={() => setVisible(false)}>início</a></Link>
           <Link href="/about"><a onClick={() => setVisible(false)}>sobre</a></Link>
-          <a href="#">serviços</a>
+          <Link href="/services"><a onClick={() => setVisible(false)}>serviços</a></Link>
           <a href="#">portfólio</a>
           <a href="#">orçamento</a>
           <a href="#">contato</a>
