@@ -47,7 +47,7 @@ export default function Home() {
           </div>
           <ul>
             <li>identidade <span>visual</span></li>
-            <li>artes itens <span>papelaria</span></li>
+            <li>artes <span>digitais</span></li>
             <li><span>criativos</span> redes sociais</li>
           </ul>
           <Button>saber mais</Button>
