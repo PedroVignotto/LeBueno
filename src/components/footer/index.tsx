@@ -1,7 +1,7 @@
 import { Container, Content } from './styles'
 
 import { FiMail, FiInstagram, FiChevronUp } from 'react-icons/fi'
-import { FaWhatsapp } from 'react-icons/fa';
+import { FaWhatsapp } from 'react-icons/fa'
 
 export function Footer() {
   return (

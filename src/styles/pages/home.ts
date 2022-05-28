@@ -2,19 +2,13 @@ import { colors } from '../global'
 
 import styled from 'styled-components'
 
-export const Hero = styled.div`
-  display: flex;
-  flex-direction: column;
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 1rem;
-`
-
-export const HeroContent = styled.main`
+export const Hero = styled.main`
   display: flex;
   gap: 2.25rem;
   flex: 1;
-  margin-top: 5rem;
+  max-width: 1100px;
+  margin: 5rem auto 0 auto;
+  padding: 0 1rem;
 
   section {
     display: flex;
@@ -100,26 +94,19 @@ export const BackgroundAbout = styled.div`
 
 export const About = styled.div`
   display: flex;
-  flex-direction: column;
-  max-width: 1100px;
-  margin: -3rem auto 0 auto;
-  padding: 0 1rem;
-`
-
-export const AboutContent = styled.section`
-  display: flex;
   gap: 2.25rem;
-  margin-top: -5rem;
+  max-width: 1100px;
+  margin: -8rem auto 0 auto;
+  padding: 0 1rem;
 
-  article {
+  section {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-around;
     flex-basis: 60%;
 
-
-    .about-me-title {
+    article {
       display: flex;
       flex-direction: column-reverse;
       justify-content: center;
@@ -139,13 +126,6 @@ export const AboutContent = styled.section`
         color: ${colors.white};
         letter-spacing: 1.8px;
       }
-    }
-
-    .about-me-text {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: center;
 
       p {
         font-size: 1rem;
@@ -157,6 +137,13 @@ export const AboutContent = styled.section`
         + p {
           margin-top: 1rem;
         }
+      }
+
+      + article {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
       }
     }
 
@@ -175,11 +162,11 @@ export const AboutContent = styled.section`
     flex-direction: column;
     align-items: center;
 
-    article {
+    section {
       margin-top: 1rem;
       width: 60%;
 
-      .about-me-text {
+      article + article {
         margin-top: 4rem;
       }
     }
@@ -190,20 +177,20 @@ export const AboutContent = styled.section`
   }
 
   @media (max-width: 720px) {
-    article {
+    section {
       width: 80%;
     }
   }
 
   @media (max-width: 500px) {
-    article {
+    section {
       width: 100%;
       padding: 0 1rem;
     }
   }
 
   @media (max-width: 325px) {
-    article {
+    section {
       margin-top: -1rem;
     }
   }
@@ -212,39 +199,37 @@ export const AboutContent = styled.section`
 export const Service = styled.div`
   border-top: 1px solid ${colors.black};
   margin-top: 5rem;
-`
 
-export const ServiceContent = styled.section`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  max-width: 1100px;
-  height: 400px;
-  margin: 2.5rem auto;
-  padding: 0 1rem;
-
-  div {
+  section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
+    max-width: 1100px;
+    height: 400px;
+    margin: 2.5rem auto;
+    padding: 0 1rem;
 
-    h3 {
-      font-size: 1rem;
-      text-transform: uppercase;
-      font-weight: 600;
-      color: ${colors.black};
-      margin-top: 1rem;
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h3 {
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: ${colors.black};
+        margin-top: 1rem;
+      }
     }
-  }
 
-  ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
-    li {
-      p {
+      li {
         font-size: 1.25rem;
         font-weight: 400;
         color: ${colors.black};
@@ -253,27 +238,25 @@ export const ServiceContent = styled.section`
         span {
           font-style: italic;
         }
-      }
 
-      + li {
-        margin-top: 1rem;
+        + li {
+          margin-top: 1rem;
+        }
       }
     }
-  }
 
-  @media (max-width: 300px) {
-    ul {
-      li {
-        p {
+    @media (max-width: 300px) {
+      ul {
+        li {
           font-size: 1rem;
         }
       }
     }
-  }
 
-  @media (max-width: 249px) {
-    ul {
-      align-items: flex-start;
+    @media (max-width: 249px) {
+      ul {
+        align-items: flex-start;
+      }
     }
   }
 `
