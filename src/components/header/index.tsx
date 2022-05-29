@@ -1,9 +1,10 @@
+import { ActiveLink } from '../active-link'
+
 import { Container, Content } from './styles'
 
 import Link from 'next/link'
 import Image from 'next/image'
 import { useState } from 'react'
-import { ActiveLink } from '../active-link'
 
 export function Header() {
   const [visible, setVisible] = useState(false)
