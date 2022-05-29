@@ -1,0 +1,22 @@
+[
+  {
+    "id": "1",
+    "stage": "primeira etapa",
+    "description": "O contato inicial começa com o cliente preenchendo um pré-briefing. Um formulário onde irei conhecer melhor as necessidades do cliente e assim, conseguir encaminhar uma proposta de orçamento personalizada.  Após a validação do orçamento e assinatura do contrato, será necessário um depósito de 30% para reservar o lugar na agenda."
+  },
+  {
+    "id": "2",
+    "stage": "segunda etapa",
+    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+  },
+  {
+    "id": "3",
+    "stage": "terceira etapa",
+    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+  },
+  {
+    "id": "4",
+    "stage": "quarta etapa",
+    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+  }
+]

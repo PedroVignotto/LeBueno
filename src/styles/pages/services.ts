@@ -3,12 +3,15 @@ import { colors } from '../global'
 import { darken } from 'polished'
 import styled from 'styled-components'
 
-export const Title = styled.section`
+type Props = { borderTop?: boolean }
+
+export const Title = styled.section<Props>`
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 2.5rem 1rem;
   border-bottom: 1px solid ${colors.black};
+  border-top: 1px solid ${({ borderTop }) => borderTop ? colors.black : 'transparent' };
 
   h1 {
     font-size: 0.875rem;
@@ -124,6 +127,29 @@ export const Main = styled.main`
 
     .digital-arts {
       flex-direction: column-reverse;
+    }
+  }
+`
+
+export const Process = styled.section`
+  display: flex;
+  justify-content: center;
+  max-width: 1100px;
+  margin: 2.5rem auto;
+  padding: 0 1rem;
+  gap: 2.5rem;
+
+  img {
+    border: 1px solid ${colors.black} !important;
+  }
+
+  ul {
+    flex-basis: 80%;
+  }
+
+  @media (max-width: 600px) {
+    ul {
+      flex-basis: 90%;
     }
   }
 `

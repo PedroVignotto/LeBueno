@@ -1,6 +1,7 @@
-import { Button } from '../components'
+import { Button, Stages } from '../components'
+import process from '../../process.json'
 
-import { Title, Main } from '../styles/pages/services'
+import { Title, Main, Process } from '../styles/pages/services'
 
 import Head from 'next/head'
 import Image from 'next/image'
@@ -55,6 +56,15 @@ export default function Services() {
           <Image src="/images/services/social-network.jpg" alt="Criativos redes sociais" width={500} height={550} />
         </article>
       </Main>
+      <Title borderTop={true}>
+        <Image src="/images/logo/symbol-black.svg" alt="Simbolo" width={30} height={30} />
+        <h1>processo criativo</h1>
+      </Title>
+      <Process>
+        <ul>
+          {process.map(({ id, stage, description }) => <Stages key={id} title={stage} description={description} />)}
+        </ul>
+      </Process>
     </>
   )
 }
