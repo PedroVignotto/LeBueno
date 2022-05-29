@@ -5,7 +5,7 @@ import { useState } from 'react'
 
 type Props = { title: string, description: string }
 
-export function Stages({ title, description }: Props) {
+export function Dropdown({ title, description }: Props) {
   const [handleOpenDescription, setHandleOpenDescription] = useState(false)
 
   return (

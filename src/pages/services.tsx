@@ -1,4 +1,4 @@
-import { Button, Stages } from '../components'
+import { Button, Dropdown } from '../components'
 import process from '../../process.json'
 
 import { Title, Main, Process } from '../styles/pages/services'
@@ -62,7 +62,7 @@ export default function Services() {
       </Title>
       <Process>
         <ul>
-          {process.map(({ id, stage, description }) => <Stages key={id} title={stage} description={description} />)}
+          {process.map(({ id, stage, description }) => <Dropdown key={id} title={stage} description={description} />)}
         </ul>
       </Process>
     </>
