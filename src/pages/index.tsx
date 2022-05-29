@@ -50,7 +50,7 @@ export default function Home() {
             <li>artes <span>digitais</span></li>
             <li><span>criativos</span> redes sociais</li>
           </ul>
-          <Button>saber mais</Button>
+          <Link href="/services"><a><Button>saber mais</Button></a></Link>
         </section>
       </Service>
       <Instagram />
