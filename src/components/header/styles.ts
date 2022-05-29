@@ -56,6 +56,15 @@ export const Content = styled.div<Props>`
         width: 100%;
       }
     }
+
+    .active::after {
+      content: '';
+      display: block;
+      height: 2px;
+      width: 100%;
+      transition: 0.5s;
+      background: ${colors.blue};
+    }
   }
 
   @media (max-width: 610px) {
