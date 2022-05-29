@@ -1,7 +1,7 @@
 import { Button, Dropdown } from '../components'
 import process from '../../process.json'
 
-import { Title, Main, Process } from '../styles/pages/services'
+import { Title, Main, Process, Contact } from '../styles/pages/services'
 
 import Head from 'next/head'
 import Image from 'next/image'
@@ -65,6 +65,13 @@ export default function Services() {
           {process.map(({ id, stage, description }) => <Dropdown key={id} title={stage} description={description} />)}
         </ul>
       </Process>
+      <Contact>
+        <section>
+          <p>cada pessoa é única, e é justamente essa singularidade que diferencia cada um de nós.</p>
+          <strong>sua marca também deve ser.</strong>
+          <a href="#">vamos criar o universo visual da sua marca juntas?</a>
+        </section>
+      </Contact>
     </>
   )
 }

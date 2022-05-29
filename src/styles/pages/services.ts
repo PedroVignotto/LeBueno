@@ -153,3 +153,42 @@ export const Process = styled.section`
     }
   }
 `
+
+export const Contact = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem 1rem;
+  background: ${colors.gold};
+  border-top: 1px solid ${colors.black};
+
+  section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    p, strong {
+      font-size: 1rem;
+      text-align: center;
+      font-weight: 600;
+      color: ${colors.white};
+      letter-spacing: 1px;
+      max-width: 35ch;
+      margin-bottom: 1.5rem;
+    }
+
+    a {
+      font-size: 1.25rem;
+      font-style: italic;
+      font-weight: 700;
+      text-align: center;
+      letter-spacing: 1px;
+      color: ${colors.white};
+      text-decoration: underline;
+
+      &:hover {
+        color: ${darken(0.1, colors.white)};
+      }
+    }
+  }
+`
