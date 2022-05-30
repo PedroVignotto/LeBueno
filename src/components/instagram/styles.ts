@@ -19,6 +19,7 @@ export const Content = styled.section`
   h3 {
     font-size: 1rem;
     text-transform: uppercase;
+    text-align: center;
     font-weight: 600;
     color: ${colors.white};
     letter-spacing: 1.8px;
