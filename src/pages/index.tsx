@@ -1,6 +1,6 @@
 import { Button, Instagram } from '../components'
 
-import { Hero, BackgroundAbout, About, Service } from '../styles/pages/home'
+import { Hero, BackgroundAbout, About, Service, Feedback } from '../styles/pages/home'
 
 import Link from 'next/link'
 import Head from 'next/head'
@@ -53,6 +53,29 @@ export default function Home() {
           <Link href="/services"><a><Button>saber mais</Button></a></Link>
         </section>
       </Service>
+      <Feedback>
+        <div>
+          <h3>experiências de quem já passou por aqui</h3>
+          <Image src="/images/general/heart.svg" alt="Coração" width={30} height={30} />
+        </div>
+        <section>
+          <article>
+            <h4>Gabi Botteselli</h4>
+            <h5>Devir Arquitetura</h5>
+            <p>“Se for resumir minha experiência com a Letícia, diria que foi EXCELENTE. Uma pessoa que faz você se sentir acolhido, muito carinho e profissionalismo em todas as etapas do processo. O resultado ficou além do que eu poderia imaginar, amei muito. Sou muito grata por tudo.”</p>
+          </article>
+          <article>
+            <h4>Leticia Monteiro</h4>
+            <h5>Mes Amis Home</h5>
+            <p>“Você é de uma sensibilidade, de um talento que eu não tenho palavras para descrever. Sinto que já nos conhecemos há muito tempo, porque a facilidade a leveza que você pegou tudo que eu queria transmitir, foi demais. Amei amei amei! Este é só o início dos nossos trabalhos juntas.”</p>
+          </article>
+          <article>
+            <h4>Gabriela Silvestrini</h4>
+            <h5>Terapia Ocupacional</h5>
+            <p>“Eu não tenho palavras pra agradecer seu trabalho, paciência (com minhas mil perguntas e alterações sem saber explicar o que eu queria), e criatividade! Ficou tudo MUITO lindo, e do jeitinho que eu queria! E a sua forma de atender, explicar e conversar é muito gentil. Muito feliz por ter escolhido você!”</p>
+          </article>
+        </section>
+      </Feedback>
       <Instagram />
     </>
   )

@@ -198,6 +198,7 @@ export const About = styled.div`
 
 export const Service = styled.div`
   border-top: 1px solid ${colors.black};
+  border-bottom: 1px solid ${colors.black};
   margin-top: 5rem;
 
   section {
@@ -256,6 +257,84 @@ export const Service = styled.div`
     @media (max-width: 249px) {
       ul {
         align-items: flex-start;
+      }
+    }
+  }
+`
+
+export const Feedback = styled.div`
+  display: flex;
+  flex-direction: column;
+  max-width: 1100px;
+  margin: 2.5rem auto;
+  padding: 0 1rem;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2.5rem;
+
+    h3 {
+      font-size: 1rem;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: 600;
+      color: ${colors.black};
+      margin-bottom: 1rem;
+    }
+  }
+
+  section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    article {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h4 {
+        font-size: 1rem;
+        text-align: center;
+        font-weight: 600;
+        color: ${colors.black};
+        letter-spacing: 1.8px;
+      }
+
+      h5 {
+        font-size: 0.875rem;
+        text-align: center;
+        font-weight: 400;
+        color: ${colors.black};
+        letter-spacing: 1.8px;
+      }
+
+      p {
+        font-size: 1rem;
+        text-align: justify;
+        font-style: italic;
+        font-weight: 400;
+        color: ${colors.black};
+        letter-spacing: 1px;
+        margin-top: 1.5rem;
+      }
+
+      + article {
+        margin-left: 2.5rem;
+      }
+    }
+  }
+
+  @media (max-width: 800px) {
+    section {
+      flex-direction: column;
+
+      article {
+        + article {
+          margin: 2.5rem 0 0 0;
+        }
       }
     }
   }
