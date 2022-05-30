@@ -19,7 +19,6 @@ export function Header() {
           <ActiveLink href="/about"><a onClick={() => setVisible(false)}>sobre</a></ActiveLink>
           <ActiveLink href="/services"><a onClick={() => setVisible(false)}>serviços</a></ActiveLink>
           <a href="#">portfólio</a>
-          <a href="#">orçamento</a>
           <a href="#">contato</a>
         </nav>
       </Content>
