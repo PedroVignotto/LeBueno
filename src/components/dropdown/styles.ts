@@ -23,15 +23,17 @@ export const Container = styled.li<Props>`
       letter-spacing: 1.8px;
     }
 
-    svg {
-      width: 1.25rem;
-      height: 1.25rem;
-      color: ${colors.gold};
-      cursor: pointer;
-      margin-left: 1rem;
+    span {
+      svg {
+        width: 1.25rem;
+        height: 1.25rem;
+        color: ${colors.gold};
+        cursor: pointer;
+        margin-left: 1rem;
 
-      transform: ${({ opened }) => opened ? 'rotate(90deg)' : 'rotate(0)' };
-      transition: 0.25s;
+        transform: ${({ opened }) => opened ? 'rotate(90deg)' : 'rotate(0)' };
+        transition: 0.25s;
+      }
     }
   }
 

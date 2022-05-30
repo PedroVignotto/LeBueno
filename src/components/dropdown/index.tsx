@@ -12,7 +12,7 @@ export function Dropdown({ title, description }: Props) {
     <Container opened={handleOpenDescription}>
       <div>
         <h3>{title}</h3>
-        <FiChevronRight onClick={() => setHandleOpenDescription(!handleOpenDescription)} />
+        <span><FiChevronRight onClick={() => setHandleOpenDescription(!handleOpenDescription)} /></span>
       </div>
       <p>{description}</p>
     </Container>
