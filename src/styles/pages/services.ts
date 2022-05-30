@@ -10,13 +10,12 @@ export const Title = styled.section<Props>`
   flex-direction: column;
   align-items: center;
   padding: 2.5rem 1rem;
-  border-bottom: 1px solid ${colors.black};
   border-top: 1px solid ${({ borderTop }) => borderTop ? colors.black : 'transparent' };
 
   h1 {
     font-size: 0.875rem;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 600;
     color: ${colors.black};
     letter-spacing: 1.8px;
     margin-top: 1rem;
@@ -28,7 +27,7 @@ export const Main = styled.main`
   display: flex;
   flex-direction: column;
   max-width: 1100px;
-  margin: 2.5rem auto;
+  margin: 0 auto 2.5rem auto;
   padding: 0 1rem;
 
   article {
@@ -135,7 +134,7 @@ export const Process = styled.section`
   display: flex;
   justify-content: center;
   max-width: 1100px;
-  margin: 2.5rem auto;
+  margin: 0 auto 2.5rem auto;
   padding: 0 1rem;
   gap: 2.5rem;
 
