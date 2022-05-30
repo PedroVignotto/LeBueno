@@ -1,6 +1,7 @@
-import { Button, Instagram } from '../components'
+import { Button, Dropdown, Instagram } from '../components'
+import faq from '../../faq.json'
 
-import { Hero, BackgroundAbout, About, Service, Feedback } from '../styles/pages/home'
+import { Hero, BackgroundAbout, About, Service, Feedback, Faq } from '../styles/pages/home'
 
 import Link from 'next/link'
 import Head from 'next/head'
@@ -76,6 +77,14 @@ export default function Home() {
           </article>
         </section>
       </Feedback>
+      <Faq>
+        <section>
+          <h3>perguntas frequentes</h3>
+          <ul>
+            {faq.map(({ id, question, answer }) => <Dropdown key={id} title={question} description={answer} />)}
+          </ul>
+        </section>
+      </Faq>
       <Instagram />
     </>
   )

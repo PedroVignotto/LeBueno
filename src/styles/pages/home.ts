@@ -339,3 +339,25 @@ export const Feedback = styled.div`
     }
   }
 `
+
+export const Faq = styled.div`
+  border-top: 1px solid ${colors.black};
+
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1100px;
+    margin: 2.5rem auto;
+    padding: 0 1rem;
+
+    > h3 {
+      font-size: 1rem;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: 600;
+      color: ${colors.black};
+      margin-bottom: 2.5rem;
+    }
+  }
+`
