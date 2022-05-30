@@ -8,7 +8,7 @@ export const Container = styled.li<Props>`
   display: flex;
   flex-direction: column;
   border-bottom: 1px solid ${colors.gold};
-  padding: 1rem 0;
+  padding: 0.75rem 0;
 
   div {
     display: flex;
@@ -16,7 +16,7 @@ export const Container = styled.li<Props>`
     justify-content: space-between;
 
     h3 {
-      font-size: 1rem;
+      font-size: 0.875rem;
       text-transform: uppercase;
       font-weight: 600;
       color: ${colors.gold};
