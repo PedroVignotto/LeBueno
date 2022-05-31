@@ -56,7 +56,7 @@ export default function Home() {
       </Service>
       <Feedback>
         <div>
-          <h3>experiências de quem já passou por aqui</h3>
+          <h3>experiência de quem já passou por aqui</h3>
           <Image src="/images/general/heart.svg" alt="Coração" width={30} height={30} />
         </div>
         <section>
