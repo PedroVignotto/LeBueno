@@ -1,22 +1,32 @@
 [
   {
     "id": "1",
-    "stage": "primeira etapa",
-    "description": "O contato inicial começa com o cliente preenchendo um pré-briefing. Um formulário onde irei conhecer melhor as necessidades do cliente e assim, conseguir encaminhar uma proposta de orçamento personalizada.  Após a validação do orçamento e assinatura do contrato, será necessário um depósito de 30% para reservar o lugar na agenda."
+    "stage": "CONTATO INICIAL",
+    "description": "O contato inicial começa com o cliente preenchendo um pré-briefing. Um formulário onde irei conhecer melhor as necessidades do cliente e assim, conseguir encaminhar uma proposta de orçamento personalizada.  Após a validação do orçamento e assinatura do contrato, será necessário um depósito de 50% para reservar o lugar na agenda para a criação do projeto."
   },
   {
     "id": "2",
-    "stage": "segunda etapa",
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+    "stage": "ESTUDOS & PESQUISAS",
+    "description": "Após o pagamento, envio para o cliente um segundo formulário aprofundado, onde coleto informações importantes da marca (público alvo, missão, visão e valores, atributos da marca, etc). Nessa etapa eu analiso as respostas, começo os estudos, pesquisas de concorrentes e etc. Procuro projetos do mesmo segmento para aplicar uma solução/oportunidade criativa fora dos padrões já usados."
   },
   {
     "id": "3",
-    "stage": "terceira etapa",
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+    "stage": "REUNIÃO DE VALIDAÇÃO",
+    "description": "Nessa etapa apresento para o cliente em uma reunião via Google Meet um breve resumo das informações importantes coletadas do briefing (análise dos concorrentes, moodboard). Também trago algumas oportunidades estratégicas que ele poderá aplicar no seu negócio. Tudo isso sendo validado nessa reunião."
   },
   {
     "id": "4",
-    "stage": "quarta etapa",
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+    "stage": "HORA DE FAZER MÁGICA",
+    "description": "Aqui é onde a mágica acontece! Depois da reunião onde defini juntamente com o cliente o conceito da marca, é hora de começar a projetar e criar. Nessa etapa começo a criação visual da marca, parte onde defino os elementos da sua identidade: paletas de cores, tipografia, texturas, etc."
+  },
+  {
+    "id": "5",
+    "stage": "SEU UNIVERSO VISUAL",
+    "description": "Apresentarei seus conceitos visuais, onde explico o “porquê” de cada escolha tipográfica, cores, etc. Apresento também as variações de assinatura da sua marca e como ela ficará aplicada em imagens realistas, trazendo algumas opções de uso também."
+  },
+  {
+    "id": "6",
+    "stage": "SUA ENTREGA CHEGOU",
+    "description": "Projeto aprovado! Enviarei todos os arquivos finais para que você tenha tudo que precisa para compartilhar seu projeto com o mundo! Os arquivos entregáveis vão nos formatos EPS, JPG, PNG e PDF, tudo bem organizado em pastas juntamente com o seu Manual da Identidade Visual."
   }
 ]
