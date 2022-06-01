@@ -2,6 +2,7 @@ import { Button, Input, Textarea } from '../components'
 
 import { Title, Form } from '../styles/pages/contact'
 
+import Head from 'next/head'
 import Image from 'next/image'
 import axios from 'axios'
 import React, { useState } from 'react'
@@ -49,6 +50,9 @@ export default function Contact() {
 
   return (
     <>
+      <Head>
+        <title>Contato ✽ Letícia Bueno</title>
+      </Head>
       <Title>
         <Image src="/images/logo/symbol-black.svg" alt="Simbolo" width={30} height={30} />
         <h1>conte-me mais sobre <span>você</span> e sua <span>empresa</span></h1>
