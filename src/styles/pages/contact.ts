@@ -19,6 +19,41 @@ export const Title = styled.section`
   }
 `
 
+export const Main = styled.section`
+  display: flex;
+  max-width: 1100px;
+  margin: 0 auto 5rem auto;
+  padding: 0 1rem;
+  gap: 2.5rem;
+
+  img {
+    border: 1px solid ${colors.black} !important;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 60%;
+
+    p {
+      font-size: 1rem;
+      text-align: justify;
+      font-weight: 400;
+      color: ${colors.black};
+      letter-spacing: 1px;
+
+      + p {
+        margin-top: 1rem;
+      }
+
+      strong {
+        font-weight: 700;
+      }
+    }
+  }
+`
+
 export const Form = styled.form`
   display: flex;
   flex-direction: column;

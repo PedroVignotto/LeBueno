@@ -1,6 +1,6 @@
 import { Button, Input, Textarea } from '../components'
 
-import { Title, Form } from '../styles/pages/contact'
+import { Title, Main, Form } from '../styles/pages/contact'
 
 import Head from 'next/head'
 import Image from 'next/image'
@@ -57,6 +57,15 @@ export default function Contact() {
         <Image src="/images/logo/symbol-black.svg" alt="Simbolo" width={30} height={30} />
         <h1>conte-me mais sobre <span>você</span> e sua <span>empresa</span></h1>
       </Title>
+      <Main>
+        <Image src="/images/general/contact.png" alt="Contato" width={350} height={350} />
+        <article>
+          <p>Estou muito feliz que tenha se interessado em trabalhar comigo para realizar o sonho da sua marca.</p>
+          <p>Para que eu possa enviar seu orçamento personalizado, vou precisar que você me forneça algumas informações neste formulário. Por isso, <strong>é de extrema importância que as respostas sejam bem claras e descritivas.</strong></p>
+          <p>Irei entrar em contato com você em até <strong>24h</strong> para enviar a proposta e conversarmos.</p>
+          <p>Até lá!</p>
+        </article>
+      </Main>
       <Form onSubmit={handleSubmit}>
         <section>
           <Input
