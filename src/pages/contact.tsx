@@ -27,6 +27,21 @@ export default function Contact() {
     event.preventDefault()
 
     axios.post(url, { name, lastName, email, whatsApp, city, meeting, brand, segment, brandDetails, site, utilization, materials, find, doubt })
+
+    setName('')
+    setLastName('')
+    setEmail('')
+    setWhatsApp('')
+    setCity('')
+    setMeeting('')
+    setBrand('')
+    setSegment('')
+    setBrandDetails('')
+    setSite('')
+    setUtilization('')
+    setMaterials('')
+    setFind('')
+    setDoubt('')
   }
 
   return (
