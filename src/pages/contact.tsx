@@ -18,6 +18,7 @@ export default function Contact() {
   const [segment, setSegment] = useState('')
   const [brandDetails, setBrandDetails] = useState('')
   const [site, setSite] = useState('')
+  const [employees, setEmployees] = useState('')
   const [utilization, setUtilization] = useState('')
   const [materials, setMaterials] = useState('')
   const [find, setFind] = useState('')
@@ -26,7 +27,7 @@ export default function Contact() {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>): void => {
     event.preventDefault()
 
-    axios.post(url, { name, lastName, email, whatsApp, city, meeting, brand, segment, brandDetails, site, utilization, materials, find, doubt })
+    axios.post(url, { name, lastName, email, whatsApp, city, meeting, brand, segment, brandDetails, site, employees, utilization, materials, find, doubt })
 
     setName('')
     setLastName('')
@@ -38,6 +39,7 @@ export default function Contact() {
     setSegment('')
     setBrandDetails('')
     setSite('')
+    setEmployees('')
     setUtilization('')
     setMaterials('')
     setFind('')
@@ -105,6 +107,11 @@ export default function Contact() {
         description="Se sim, por gentileza inserir o link abaixo."
         state={site}
         setState={setSite}
+      />
+      <Input
+        label="quantos funcionários tem na sua empresa? *"
+        state={employees}
+        setState={setEmployees}
       />
       <Input
         label="onde a identidade visual será usada? *"
