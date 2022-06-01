@@ -70,11 +70,13 @@ export default function Contact() {
         <section>
           <Input
             label="nome *"
+            name="name"
             state={name}
             setState={setName}
           />
           <Input
             label="sobrenome *"
+            name="lastName"
             state={lastName}
             setState={setLastName}
           />
@@ -82,18 +84,21 @@ export default function Contact() {
         <section>
           <Input
             label="email *"
+            name="email"
             state={email}
             setState={setEmail}
           />
           <Input
             label="whatsapp *"
             placeholder="Ex: (11) 93705-4095"
+            name="whatsApp"
             state={whatsApp}
             setState={setWhatsApp}
           />
           <Input
             label="de onde você é? *"
             placeholder="Ex: São Paulo/SP"
+            name="city"
             state={city}
             setState={setCity}
           />
@@ -101,57 +106,67 @@ export default function Contact() {
         <Input
           label="você tem disponibilidade para uma reunião? *"
           description="Faz parte do processo de criação. A reunião é rápida, em torno de 20 minutinhos =)"
+          name="meeting"
           state={meeting}
           setState={setMeeting}
         />
         <Input
           label="qual o nome da sua marca? *"
           description="Não trabalho com a parte de criação de naming da marca. Por isso é essencial que já possua um nome."
+          name="brand"
           state={brand}
           setState={setBrand}
         />
         <Input
           label="qual é o segmento em que atua ou irá atuar? *"
           placeholder="Ex: Veterinária, Joalheria, Dentista, Arquitetura"
+          name="segment"
           state={segment}
           setState={setSegment}
         />
         <Textarea
           label="me conte um pouco da sua empresa. quais os serviços oferecidos? o que ela faz? *"
+          name="brandDetails"
           state={brandDetails}
           setState={setBrandDetails}
         />
         <Input
           label="sua marca possui site ou redes sociais? *"
           description="Se sim, por gentileza inserir o link abaixo."
+          name="site"
           state={site}
           setState={setSite}
         />
         <Input
           label="quantos funcionários tem na sua empresa? *"
+          name="employees"
           state={employees}
           setState={setEmployees}
         />
         <Input
           label="onde a identidade visual será usada? *"
           placeholder="Ex: Site, Redes sociais, Papelaria/Impressos"
+          name="utilization"
           state={utilization}
           setState={setUtilization}
         />
         <Textarea
           label="além da identidade visual, de quais outros materiais você precisa? *"
           placeholder="Ex: Cartão de visitas, Assinatura de e-mail, Envelope"
+          name="materials"
           state={materials}
           setState={setMaterials}
         />
         <Input
           label="por onde você me encontrou? *"
+          name="find"
           state={find}
           setState={setFind}
         />
         <Textarea
           label="tem alguma dúvida que possa te ajudar? *"
           description="Caso prefira, fique a vontade para entrar em contato comigo via WhatsApp: (11) 93705-4095 =)"
+          name="doubt"
           state={doubt}
           setState={setDoubt}
         />
