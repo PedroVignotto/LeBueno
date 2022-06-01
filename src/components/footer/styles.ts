@@ -1,5 +1,6 @@
 import { colors } from '../../styles/global'
 
+import { darken } from 'polished'
 import styled from 'styled-components'
 
 export const Container = styled.footer`
@@ -93,6 +94,10 @@ export const Content = styled.div`
         width: 1.5rem;
         height: 1.5rem;
         color: ${colors.black};
+      }
+
+      &:hover {
+        background: ${darken(0.07, colors.blue)}
       }
     }
   }
