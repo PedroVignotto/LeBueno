@@ -17,7 +17,7 @@ export default function About() {
       <Main>
         <Image src="/images/logo/symbol-black.svg" alt="Simbolo" width={30} height={30} />
         <section>
-          <Image src="/images/photos/profile-2.jpg" alt="Eu" width={300} height={350} />
+          <Image src="/images/photos/profile-2.jpg" alt="Eu" width={350} height={350} />
           <article>
             <p>2019 foi um ano de mudanças na minha vida. Larguei meu emprego CLT em busca de trabalhar com o que me movia e que até então, era um risco, mas se eu quisesse uma mudança eu teria que enfrentar o desafio.</p>
             <p>O momento era vai ou racha! Bem… Eu fui. O friozinho na barriga de empreender veio junto,  noites mal dormidas pensando se tinha feito a coisa certa… Enfim, o grupo do <span>“medo”</span> estava ali comigo, mas eu fico feliz em ter tomado essa decisão.</p>
