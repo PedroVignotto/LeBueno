@@ -1,7 +1,7 @@
 import { Container } from './styles'
 
-type Props = { children: string | JSX.Element }
+type Props = { children: string | JSX.Element, type?: 'submit' | undefined }
 
-export function Button({ children, ...rest }: Props) {
-  return <Container {...rest}>{children}</Container>
+export function Button({ children, type, ...rest }: Props) {
+  return <Container type={type} {...rest}>{children}</Container>
 }
