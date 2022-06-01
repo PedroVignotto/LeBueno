@@ -3,6 +3,7 @@ import process from '../../process.json'
 
 import { Title, Main, Process, Contact } from '../styles/pages/services'
 
+import Link from 'next/link'
 import Head from 'next/head'
 import Image from 'next/image'
 
@@ -69,7 +70,7 @@ export default function Services() {
         <section>
           <p>cada pessoa é única, e é justamente essa singularidade que diferencia cada um de nós.</p>
           <strong>sua marca também deve ser.</strong>
-          <a href="#">vamos criar o universo visual da sua marca juntas?</a>
+          <Link href="/contact"><a>vamos criar o universo visual da sua marca juntas?</a></Link>
         </section>
       </Contact>
     </>

@@ -20,7 +20,7 @@ export default function Home() {
         <section>
           <Image src="/images/logo/symbol-black.svg" alt="Simbolo" width={30} height={30} />
           <h1>design <span>afetivo, delicado &<br /> singular</span> para empreendedoras<br /> apaixonadas e com propósitos</h1>
-          <h2>Vamos criar o <span>universo visual</span><br /> da sua marca juntas?</h2>
+          <Link href="/contact"><a><h2>Vamos criar o <span>universo visual</span><br /> da sua marca juntas?</h2></a></Link>
         </section>
       </Hero>
       <BackgroundAbout />
