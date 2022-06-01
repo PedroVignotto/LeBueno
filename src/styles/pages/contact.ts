@@ -1,5 +1,6 @@
 import { colors } from '../global'
 
+import { darken } from 'polished'
 import styled from 'styled-components'
 
 export const Title = styled.section`
@@ -95,6 +96,15 @@ export const Form = styled.form`
   @media (max-width: 550px) {
     section {
       grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  button {
+    color: ${colors.white};
+    background: ${colors.gold};
+
+    &:hover {
+      background: ${darken(0.07, colors.gold)}
     }
   }
 `

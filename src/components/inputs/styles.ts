@@ -27,6 +27,11 @@ export const Container = styled.div`
     border: 1px solid ${colors.black};
     padding: 0.75rem;
     background: ${colors.white};
+
+    &:focus {
+      border-color: ${colors.gold};
+      box-shadow: 0 0 0 2px ${colors.gold};
+    }
   }
 
   textarea {
