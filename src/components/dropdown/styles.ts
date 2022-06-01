@@ -38,7 +38,6 @@ export const Container = styled.li<Props>`
   }
 
   p {
-    display: flex;
     font-size: 1rem;
     text-align: justify;
     font-weight: 400;
