@@ -1,4 +1,4 @@
-import { Button } from '../components'
+import { Button, Input, Textarea } from '../components'
 
 import { Form } from '../styles/pages/contact'
 
@@ -6,79 +6,114 @@ import axios from 'axios'
 import React, { useState } from 'react'
 
 export default function Contact() {
+  const url = 'https://formsubmit.co/ajax/hello@lebueno.com.br'
+
+  const [name, setName] = useState('')
+  const [lastName, setLastName] = useState('')
+  const [email, setEmail] = useState('')
+  const [whatsApp, setWhatsApp] = useState('')
+  const [city, setCity] = useState('')
+  const [meeting, setMeeting] = useState('')
+  const [brand, setBrand] = useState('')
+  const [segment, setSegment] = useState('')
+  const [brandDetails, setBrandDetails] = useState('')
+  const [site, setSite] = useState('')
+  const [utilization, setUtilization] = useState('')
+  const [materials, setMaterials] = useState('')
+  const [find, setFind] = useState('')
+  const [doubt, setDoubt] = useState('')
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>): void => {
     event.preventDefault()
 
-    axios.post('https://formsubmit.co/ajax/hello@lebueno.com.br', { name: 'teste' })
+    axios.post(url, { name, lastName, email, whatsApp, city, meeting, brand, segment, brandDetails, site, utilization, materials, find, doubt })
   }
 
   return (
     <Form onSubmit={handleSubmit}>
       <section>
-        <div>
-          <label htmlFor="name">nome *</label>
-          <input type="text" id="name" />
-        </div>
-        <div>
-          <label htmlFor="lastName">sobrenome *</label>
-          <input type="text" id="lastName" />
-        </div>
+        <Input
+          label="nome *"
+          state={name}
+          setState={setName}
+        />
+        <Input
+          label="sobrenome *"
+          state={lastName}
+          setState={setLastName}
+        />
       </section>
       <section>
-        <div>
-          <label htmlFor="email">email *</label>
-          <input type="text" id="email" />
-        </div>
-        <div>
-          <label htmlFor="whatsApp">whatsapp *</label>
-          <input type="text" id="whatsApp" placeholder="Ex: (11) 93705-4095" />
-        </div>
-        <div>
-          <label htmlFor="city">de onde você é? *</label>
-          <input type="text" id="city" placeholder="Ex: São Paulo/SP" />
-        </div>
+        <Input
+          label="email *"
+          state={email}
+          setState={setEmail}
+        />
+        <Input
+          label="whatsapp *"
+          placeholder="Ex: (11) 93705-4095"
+          state={whatsApp}
+          setState={setWhatsApp}
+        />
+        <Input
+          label="de onde você é? *"
+          placeholder="Ex: São Paulo/SP"
+          state={city}
+          setState={setCity}
+        />
       </section>
-      <div>
-        <label htmlFor="meeting">você tem disponibilidade para uma reunião? *</label>
-        <span>Faz parte do processo de criação. A reunião é rápida, em torno de 20 minutinhos =)</span>
-        <input type="text" id="meeting" />
-      </div>
-      <div>
-        <label htmlFor="brand">qual o nome da sua marca? *</label>
-        <span>Não trabalho com a parte de criação de naming da marca. Por isso é essencial que já possua um nome.</span>
-        <input type="text" id="brand" />
-      </div>
-      <div>
-        <label htmlFor="segment">qual é o segmento em que atua ou irá atuar? *</label>
-        <input type="text" id="segment" placeholder="Ex: Veterinária, Joalheria, Dentista, Arquitetura" />
-      </div>
-      <div>
-        <label htmlFor="brandDetails">me conte um pouco da sua empresa. quais os serviços oferecidos? o que ela faz? *</label>
-        <textarea id="brandDetails" rows={5} />
-      </div>
-      <div>
-        <label htmlFor="site">sua marca possui site ou redes sociais? *</label>
-        <span>Se sim, por gentileza inserir o link abaixo.</span>
-        <input type="text" id="site" />
-      </div>
-      <div>
-        <label htmlFor="utilization">onde a identidade visual será usada? *</label>
-        <input type="text" id="utilization" placeholder="Ex: Site, Redes sociais, Papelaria/Impressos" />
-      </div>
-      <div>
-        <label htmlFor="materials">além da identidade visual, de quais outros materiais você precisa? *</label>
-        <textarea id="materials" placeholder="Ex: Cartão de visitas, Assinatura de e-mail, Envelope" rows={5} />
-      </div>
-      <div>
-        <label htmlFor="find">por onde você me encontrou? *</label>
-        <input type="text" id="find" />
-      </div>
-      <div>
-        <label htmlFor="doubt">tem alguma dúvida que possa te ajudar? *</label>
-        <span>Caso prefira, fique a vontade para entrar em contato comigo via WhatsApp: (11) 93705-4095 =)</span>
-        <textarea id="doubt" rows={5} />
-      </div>
+      <Input
+        label="você tem disponibilidade para uma reunião? *"
+        description="Faz parte do processo de criação. A reunião é rápida, em torno de 20 minutinhos =)"
+        state={meeting}
+        setState={setMeeting}
+      />
+      <Input
+        label="qual o nome da sua marca? *"
+        description="Não trabalho com a parte de criação de naming da marca. Por isso é essencial que já possua um nome."
+        state={brand}
+        setState={setBrand}
+      />
+      <Input
+        label="qual é o segmento em que atua ou irá atuar? *"
+        placeholder="Ex: Veterinária, Joalheria, Dentista, Arquitetura"
+        state={segment}
+        setState={setSegment}
+      />
+      <Textarea
+        label="me conte um pouco da sua empresa. quais os serviços oferecidos? o que ela faz? *"
+        state={brandDetails}
+        setState={setBrandDetails}
+      />
+      <Input
+        label="sua marca possui site ou redes sociais? *"
+        description="Se sim, por gentileza inserir o link abaixo."
+        state={site}
+        setState={setSite}
+      />
+      <Input
+        label="onde a identidade visual será usada? *"
+        placeholder="Ex: Site, Redes sociais, Papelaria/Impressos"
+        state={utilization}
+        setState={setUtilization}
+      />
+      <Textarea
+        label="além da identidade visual, de quais outros materiais você precisa? *"
+        placeholder="Ex: Cartão de visitas, Assinatura de e-mail, Envelope"
+        state={materials}
+        setState={setMaterials}
+      />
+      <Input
+        label="por onde você me encontrou? *"
+        state={find}
+        setState={setFind}
+      />
+      <Textarea
+        label="tem alguma dúvida que possa te ajudar? *"
+        description="Caso prefira, fique a vontade para entrar em contato comigo via WhatsApp: (11) 93705-4095 =)"
+        state={doubt}
+        setState={setDoubt}
+      />
       <Button type="submit">enviar</Button>
     </Form>
   )
