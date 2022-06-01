@@ -13,11 +13,32 @@ export const Form = styled.form`
   padding: 0 1rem;
 
   section {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
+
+    + section {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 
   button {
     align-self: flex-start;
+  }
+
+  @media (max-width: 720px) {
+    section {
+      gap: 2.25rem;
+
+      + section {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  }
+
+  @media (max-width: 550px) {
+    section {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 `
