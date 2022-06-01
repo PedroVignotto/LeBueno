@@ -52,6 +52,11 @@ export const Main = styled.section`
       }
     }
   }
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `
 
 export const Form = styled.form`
