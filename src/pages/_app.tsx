@@ -2,6 +2,7 @@ import { Footer, Header } from '../components'
 
 import { GlobalStyle } from '../styles/global'
 
+import { ToastContainer } from 'react-toastify'
 import { AppProps } from 'next/app'
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -11,6 +12,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Component {...pageProps} />
       <Footer />
       <GlobalStyle />
+      <ToastContainer autoClose={3000} theme="colored" />
     </>
   )
 }

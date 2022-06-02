@@ -1,5 +1,6 @@
 import { colors } from './colors'
 
+import 'react-toastify/dist/ReactToastify.css'
 import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
@@ -55,5 +56,10 @@ export const GlobalStyle = createGlobalStyle`
 
   ul {
     list-style: none;
+  }
+
+  :root {
+    --toastify-color-success: ${colors.green};
+    --toastify-color-error: ${colors.red};
   }
 `
