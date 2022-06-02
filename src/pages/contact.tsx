@@ -26,6 +26,8 @@ export default function Contact() {
   const [find, setFind] = useState('')
   const [doubt, setDoubt] = useState('')
 
+  const formError = !name || !lastName || !email || !whatsApp || !city || !meeting || !brand || !segment || !brandDetails || !site || !employees || !utilization || !materials || !find || !doubt
+
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>): void => {
     event.preventDefault()
 
@@ -170,7 +172,7 @@ export default function Contact() {
           state={doubt}
           setState={setDoubt}
         />
-        <Button type="submit">enviar</Button>
+        <Button type="submit" disabled={formError}>enviar</Button>
       </Form>
     </>
   )
