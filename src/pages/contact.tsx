@@ -5,6 +5,7 @@ import { Title, Main, Form } from '../styles/pages/contact'
 import Head from 'next/head'
 import Image from 'next/image'
 import axios from 'axios'
+import { toast } from 'react-toastify'
 import React, { useState } from 'react'
 
 export default function Contact() {
@@ -33,28 +34,35 @@ export default function Contact() {
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>): Promise<void> => {
     event.preventDefault()
 
-    if (formError || loading) return
+    try {
+      if (formError || loading) return
 
-    setLoading(true)
+      setLoading(true)
 
-    await axios.post(url, { name, lastName, email, whatsApp, city, meeting, brand, segment, brandDetails, site, employees, utilization, materials, find, doubt })
+      await axios.post(url, { name, lastName, email, whatsApp, city, meeting, brand, segment, brandDetails, site, employees, utilization, materials, find, doubt })
 
-    setName('')
-    setLastName('')
-    setEmail('')
-    setWhatsApp('')
-    setCity('')
-    setMeeting('')
-    setBrand('')
-    setSegment('')
-    setBrandDetails('')
-    setSite('')
-    setEmployees('')
-    setUtilization('')
-    setMaterials('')
-    setFind('')
-    setDoubt('')
-    setLoading(false)
+      setName('')
+      setLastName('')
+      setEmail('')
+      setWhatsApp('')
+      setCity('')
+      setMeeting('')
+      setBrand('')
+      setSegment('')
+      setBrandDetails('')
+      setSite('')
+      setEmployees('')
+      setUtilization('')
+      setMaterials('')
+      setFind('')
+      setDoubt('')
+
+      toast.success('Seu formulário foi enviado!')
+    } catch (err: unknown) {
+      toast.error('Algo deu errado, tente novamente!')
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
