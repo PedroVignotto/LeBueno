@@ -1,4 +1,4 @@
-import { Button, Input, Textarea } from '../components'
+import { Button, Input, Spinner, Textarea } from '../components'
 
 import { Title, Main, Form } from '../styles/pages/contact'
 
@@ -9,6 +9,8 @@ import React, { useState } from 'react'
 
 export default function Contact() {
   const url = 'https://formsubmit.co/ajax/hello@lebueno.com.br'
+
+  const [loading, setLoading] = useState(false)
 
   const [name, setName] = useState('')
   const [lastName, setLastName] = useState('')
@@ -28,12 +30,14 @@ export default function Contact() {
 
   const formError = !name || !lastName || !email || !whatsApp || !city || !meeting || !brand || !segment || !brandDetails || !site || !employees || !utilization || !materials || !find || !doubt
 
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>): void => {
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>): Promise<void> => {
     event.preventDefault()
 
-    if (formError) return
+    if (formError || loading) return
 
-    axios.post(url, { name, lastName, email, whatsApp, city, meeting, brand, segment, brandDetails, site, employees, utilization, materials, find, doubt })
+    setLoading(true)
+
+    await axios.post(url, { name, lastName, email, whatsApp, city, meeting, brand, segment, brandDetails, site, employees, utilization, materials, find, doubt })
 
     setName('')
     setLastName('')
@@ -50,6 +54,7 @@ export default function Contact() {
     setMaterials('')
     setFind('')
     setDoubt('')
+    setLoading(false)
   }
 
   return (
@@ -174,7 +179,7 @@ export default function Contact() {
           state={doubt}
           setState={setDoubt}
         />
-        <Button type="submit" disabled={formError}>enviar</Button>
+        <Button type="submit" disabled={formError}>{loading ? <><Spinner /><span>Enviando</span></> : 'Enviar'}</Button>
       </Form>
     </>
   )
