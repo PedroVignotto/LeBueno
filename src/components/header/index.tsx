@@ -18,7 +18,7 @@ export function Header() {
           <ActiveLink href="/"><a onClick={() => setVisible(false)}>início</a></ActiveLink>
           <ActiveLink href="/about"><a onClick={() => setVisible(false)}>sobre</a></ActiveLink>
           <ActiveLink href="/services"><a onClick={() => setVisible(false)}>serviços</a></ActiveLink>
-          <a href="#">portfólio</a>
+          <ActiveLink href="/portfolio"><a onClick={() => setVisible(false)}>portfólio</a></ActiveLink>
           <ActiveLink href="/contact"><a onClick={() => setVisible(false)}>contato</a></ActiveLink>
         </nav>
       </Content>
