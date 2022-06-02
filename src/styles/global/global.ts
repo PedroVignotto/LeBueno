@@ -43,6 +43,11 @@ export const GlobalStyle = createGlobalStyle`
     cursor: pointer;
   }
 
+  [disabled] {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+
   a {
     color: inherit;
     text-decoration: none;
