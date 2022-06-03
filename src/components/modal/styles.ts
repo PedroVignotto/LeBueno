@@ -8,7 +8,7 @@ export const Title = styled.section`
   align-items: center;
   padding: 2.5rem 1rem;
 
-  h2 {
+  h3 {
     font-size: 0.875rem;
     text-transform: uppercase;
     font-weight: 600;
@@ -18,7 +18,7 @@ export const Title = styled.section`
     text-align: center;
   }
 
-  h3 {
+  h4 {
     font-size: 1rem;
     text-transform: lowercase;
     text-align: center;

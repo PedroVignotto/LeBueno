@@ -13,8 +13,8 @@ export function Modal({ openModal, closeModal, name, description, images }: Prop
       <button onClick={closeModal} className="modal-close"><FiX /></button>
       <Title>
         <Image src="/images/logo/symbol-black.svg" alt="Simbolo" width={30} height={30} />
-        <h2>{name}</h2>
-        <h3>{description}</h3>
+        <h3>{name}</h3>
+        <h4>{description}</h4>
       </Title>
       <Content>
         {images.map(({ id, src, alt }) => <Image key={id} src={`/images/portfolio/${src}`} alt={alt} width={1100} height={1100} />)}

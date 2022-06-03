@@ -57,7 +57,7 @@ export default function Services() {
           <Image src="/images/services/social-network.jpg" alt="Criativos redes sociais" width={500} height={550} />
         </article>
       </Main>
-      <Title borderTop={true}>
+      <Title borderTop>
         <Image src="/images/logo/symbol-black.svg" alt="Simbolo" width={30} height={30} />
         <h1>processo criativo</h1>
       </Title>

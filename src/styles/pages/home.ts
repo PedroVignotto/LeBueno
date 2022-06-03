@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 export const Hero = styled.main`
   display: flex;
-  gap: 2.25rem;
+  gap: 2.5rem;
   flex: 1;
   max-width: 1100px;
   margin: 5rem auto 0 auto;
@@ -94,7 +94,7 @@ export const BackgroundAbout = styled.div`
 
 export const About = styled.div`
   display: flex;
-  gap: 2.25rem;
+  gap: 2.5rem;
   max-width: 1100px;
   margin: -8rem auto 0 auto;
   padding: 0 1rem;
@@ -148,7 +148,7 @@ export const About = styled.div`
     }
 
     button {
-      margin-top: 2rem;
+      margin-top: 2.5rem;
     }
   }
 
@@ -159,20 +159,21 @@ export const About = styled.div`
   }
 
   @media (max-width: 1000px) {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
 
     section {
-      margin-top: 1rem;
       width: 60%;
 
-      article + article {
-        margin-top: 4rem;
-      }
-    }
+      article {
+        h3, h4 {
+          color: ${colors.black};
+        }
 
-    aside {
-      display: none;
+        + article {
+          margin-top: 2.5rem;
+        }
+      }
     }
   }
 

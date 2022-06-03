@@ -18,12 +18,13 @@ export const Title = styled.section`
     text-align: center;
   }
 
-  p {
+  h2 {
     font-size: 1rem;
+    text-transform: lowercase;
     text-align: center;
     font-weight: 400;
     color: ${colors.black};
-    letter-spacing: 1px;
+    letter-spacing: 1.8px;
     margin-top: 1rem;
     max-width: 40ch;
   }

@@ -64,7 +64,7 @@ export const Form = styled.form`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 2.25rem;
+  gap: 2.5rem;
   max-width: 1100px;
   margin: 2.5rem auto;
   padding: 0 1rem;
@@ -85,7 +85,7 @@ export const Form = styled.form`
 
   @media (max-width: 720px) {
     section {
-      gap: 2.25rem;
+      gap: 2.5rem;
 
       + section {
         grid-template-columns: repeat(1, 1fr);
