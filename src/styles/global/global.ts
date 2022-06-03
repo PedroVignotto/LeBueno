@@ -16,6 +16,10 @@ export const GlobalStyle = createGlobalStyle`
     outline: 0;
   }
 
+  ::selection {
+    background: ${colors.pink};
+  }
+
   ::-webkit-scrollbar {
     width: 1rem;
     background: ${colors.white};
