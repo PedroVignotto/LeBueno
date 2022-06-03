@@ -1,6 +1,7 @@
 import { colors } from './colors'
 
 import 'react-toastify/dist/ReactToastify.css'
+import { darken } from 'polished'
 import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
@@ -13,6 +14,22 @@ export const GlobalStyle = createGlobalStyle`
 
   *:focus {
     outline: 0;
+  }
+
+  ::-webkit-scrollbar {
+    width: 1rem;
+    background: ${colors.white};
+  }
+
+  ::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 1rem;
+    border-radius: 1rem;
+    background: ${colors.gold};
+    border: 3px solid ${colors.white};
+
+    &:hover {
+      background: ${darken(0.07, colors.gold)}
+    }
   }
 
   html, body, #root {
