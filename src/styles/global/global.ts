@@ -62,4 +62,39 @@ export const GlobalStyle = createGlobalStyle`
     --toastify-color-success: ${colors.green};
     --toastify-color-error: ${colors.red};
   }
+
+  .modal-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .modal-content {
+    width: 100%;
+    max-height: calc(100vh - 12rem);
+    max-width: 1100px;
+    position: relative;
+    background-color: ${colors.white};
+    overflow-y: auto;
+    margin: 0 1rem;
+  }
+
+  .modal-close {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    border: 0;
+    background: transparent;
+
+    svg {
+      height: 1rem;
+      width: 1rem;
+    }
+  }
 `
