@@ -26,7 +26,6 @@ export const Title = styled.section`
     letter-spacing: 1px;
     margin-top: 1rem;
     max-width: 40ch;
-    margin-top: 1rem;
   }
 `
 
@@ -60,9 +59,4 @@ export const Projects = styled.section`
       grid-template-columns: repeat(1, 1fr);
     }
   }
-`
-
-export const Content = styled.main`
-  display: flex;
-  flex-direction: column;
 `

@@ -1,13 +1,16 @@
-import { Title, Projects, Content } from '../styles/pages/portfolio'
+import { Modal } from '../components'
+import projects from '../../projects.json'
+
+import { Title, Projects } from '../styles/pages/portfolio'
 
 import Head from 'next/head'
 import Image from 'next/image'
-import Modal from 'react-modal'
-import { FiX } from 'react-icons/fi'
 import { useState } from 'react'
 
 export default function Portfolio() {
-  const [OpenModal, setOpenModal] = useState(false)
+  const [openModal, setOpenModal] = useState(false)
+
+  const handleModal = () => setOpenModal(!openModal)
 
   return (
     <>
@@ -21,30 +24,14 @@ export default function Portfolio() {
       </Title>
       <Projects>
         <div>
-          <Image src="/images/portfolio/ceres/profile.png" alt="CERES VETERINÁRIA" width={350} height={350} onClick={() => setOpenModal(!OpenModal)} />
+          {projects.map(({ id, images, name, description, profile }) =>
+            <>
+              <Image key={id} src={profile} alt={name} width={350} height={350} onClick={handleModal} />
+              <Modal openModal={openModal} closeModal={handleModal} name={name} description={description} images={images} />
+            </>
+          )}
         </div>
       </Projects>
-
-      <Modal isOpen={OpenModal} onRequestClose={() => setOpenModal(!OpenModal)} ariaHideApp={false} overlayClassName='modal-overlay' className='modal-content'>
-        <button onClick={() => setOpenModal(!OpenModal)} className="modal-close"><FiX /></button>
-        <Content>
-          <Title>
-            <Image src="/images/logo/symbol-black.svg" alt="Simbolo" width={30} height={30} />
-            <h1>CERES VETERINÁRIA</h1>
-            <p>Identidade visual, papelaria e criativos redes sociais</p>
-          </Title>
-          <Image src="/images/portfolio/ceres/1.png" alt="Mockup" width={1100} height={1100} />
-          <Image src="/images/portfolio/ceres/2.png" alt="Conceito" width={1100} height={1100} />
-          <Image src="/images/portfolio/ceres/3.png" alt="Mockup" width={1100} height={1100} />
-          <Image src="/images/portfolio/ceres/4.png" alt="Mockup" width={1100} height={1100} />
-          <Image src="/images/portfolio/ceres/5.png" alt="Variações" width={1100} height={1100} />
-          <Image src="/images/portfolio/ceres/6.png" alt="Mockup" width={1100} height={1100} />
-          <Image src="/images/portfolio/ceres/7.png" alt="Logo" width={1100} height={1100} />
-          <Image src="/images/portfolio/ceres/8.gif" alt="Gif Criativos" width={1100} height={1100} />
-          <Image src="/images/portfolio/ceres/9.png" alt="Mockup" width={1100} height={1100} />
-          <Image src="/images/portfolio/ceres/10.png" alt="Mockup" width={1100} height={1100} />
-        </Content>
-      </Modal>
     </>
   )
 }
