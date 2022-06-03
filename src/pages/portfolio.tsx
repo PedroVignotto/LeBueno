@@ -1,17 +1,12 @@
-import { Modal } from '../components'
+import { Modal, Project } from '../components'
 import projects from '../../projects.json'
 
 import { Title, Projects } from '../styles/pages/portfolio'
 
 import Head from 'next/head'
 import Image from 'next/image'
-import { useState } from 'react'
 
 export default function Portfolio() {
-  const [openModal, setOpenModal] = useState(false)
-
-  const handleModal = () => setOpenModal(!openModal)
-
   return (
     <>
       <Head>
@@ -24,12 +19,7 @@ export default function Portfolio() {
       </Title>
       <Projects>
         <div>
-          {projects.map(({ id, images, name, description, profile }) =>
-            <>
-              <Image key={id} src={profile} alt={name} width={350} height={350} onClick={handleModal} />
-              <Modal openModal={openModal} closeModal={handleModal} name={name} description={description} images={images} />
-            </>
-          )}
+          {projects.map(project => <Project key={project.id} project={project} />)}
         </div>
       </Projects>
     </>

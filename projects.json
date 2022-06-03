@@ -3,18 +3,18 @@
     "id": "1",
     "name": "CERES VETERINÁRIA",
     "description": "Identidade visual, papelaria e criativos redes sociais",
-    "profile": "/images/portfolio/ceres/profile.png",
+    "src": "ceres/profile.png",
     "images": [
-      { "id": "1", "src": "/images/portfolio/ceres/1.png", "alt": "Mockup" },
-      { "id": "2", "src": "/images/portfolio/ceres/2.png", "alt": "Conceito" },
-      { "id": "3", "src": "/images/portfolio/ceres/3.png", "alt": "Mockup" },
-      { "id": "4", "src": "/images/portfolio/ceres/4.png", "alt": "Mockup" },
-      { "id": "5", "src": "/images/portfolio/ceres/5.png", "alt": "Variações" },
-      { "id": "6", "src": "/images/portfolio/ceres/6.png", "alt": "Mockup" },
-      { "id": "7", "src": "/images/portfolio/ceres/7.png", "alt": "Logo" },
-      { "id": "8", "src": "/images/portfolio/ceres/8.gif", "alt": "Criativos" },
-      { "id": "9", "src": "/images/portfolio/ceres/9.png", "alt": "Mockup" },
-      { "id": "10", "src": "/images/portfolio/ceres/10.png", "alt": "Mockup" }
+      { "id": "1", "src": "ceres/1.png", "alt": "Mockup" },
+      { "id": "2", "src": "ceres/2.png", "alt": "Conceito" },
+      { "id": "3", "src": "ceres/3.png", "alt": "Mockup" },
+      { "id": "4", "src": "ceres/4.png", "alt": "Mockup" },
+      { "id": "5", "src": "ceres/5.png", "alt": "Variações" },
+      { "id": "6", "src": "ceres/6.png", "alt": "Mockup" },
+      { "id": "7", "src": "ceres/7.png", "alt": "Logo" },
+      { "id": "8", "src": "ceres/8.gif", "alt": "Criativos" },
+      { "id": "9", "src": "ceres/9.png", "alt": "Mockup" },
+      { "id": "10", "src": "ceres/10.png", "alt": "Mockup" }
     ]
   }
 ]

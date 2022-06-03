@@ -17,7 +17,7 @@ export function Modal({ openModal, closeModal, name, description, images }: Prop
         <h3>{description}</h3>
       </Title>
       <Content>
-        {images.map(({ id, src, alt }) => <Image key={id} src={src} alt={alt} width={1100} height={1100} />)}
+        {images.map(({ id, src, alt }) => <Image key={id} src={`/images/portfolio/${src}`} alt={alt} width={1100} height={1100} />)}
       </Content>
     </ReactModal>
   )
