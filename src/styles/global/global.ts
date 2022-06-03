@@ -112,6 +112,7 @@ export const GlobalStyle = createGlobalStyle`
     svg {
       height: 1rem;
       width: 1rem;
+      color: ${colors.black};
     }
   }
 `
