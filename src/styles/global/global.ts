@@ -20,22 +20,6 @@ export const GlobalStyle = createGlobalStyle`
     background: ${colors.pink};
   }
 
-  ::-webkit-scrollbar {
-    width: 1rem;
-    background: ${colors.white};
-  }
-
-  ::-webkit-scrollbar-thumb {
-    -webkit-border-radius: 1rem;
-    border-radius: 1rem;
-    background: ${colors.gold};
-    border: 3px solid ${colors.white};
-
-    &:hover {
-      background: ${darken(0.07, colors.gold)}
-    }
-  }
-
   html, body, #root {
     height: 100%;
   }
