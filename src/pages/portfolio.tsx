@@ -15,7 +15,7 @@ export default function Portfolio() {
       <Title>
         <Image src="/images/logo/symbol-black.svg" alt="Simbolo" width={30} height={30} />
         <h1>meu trabalho</h1>
-        <h2>Tive o prazer de trabalhar em marcas de clientes incríveis. Pegue seu café e fique à vontade para conhecer um pouco mais do que eu amo fazer.</h2>
+        <h2>Tive o prazer de trabalhar em marcas de clientes incríveis. Pegue seu café e fique à vontade para conhecer um pouco mais do que eu amo fazer</h2>
       </Title>
       <Projects>
         <div>
