@@ -186,7 +186,6 @@ export const About = styled.div`
   @media (max-width: 500px) {
     section {
       width: 100%;
-      padding: 0 1rem;
     }
   }
 
