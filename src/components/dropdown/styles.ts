@@ -24,6 +24,9 @@ export const Container = styled.li<Props>`
     }
 
     span {
+      display: flex;
+      align-items: center;
+
       svg {
         width: 1.25rem;
         height: 1.25rem;
