@@ -1,5 +1,5 @@
 import { Button, Dropdown } from '../components'
-import process from '../../process.json'
+import process from '../data/process.json'
 
 import { Title, Main, Process, Contact } from '../styles/pages/services'
 

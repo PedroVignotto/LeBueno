@@ -1,5 +1,5 @@
 import { Button, Dropdown, Instagram } from '../components'
-import faq from '../../faq.json'
+import faq from '../data/faq.json'
 
 import { Hero, BackgroundAbout, About, Service, Feedback, Faq } from '../styles/pages/home'
 
