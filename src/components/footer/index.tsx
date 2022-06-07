@@ -14,7 +14,7 @@ export function Footer() {
               <a href='https://wa.me/5511937054095' target="_blank" rel="noreferrer">(11) 93705-4095</a><FaWhatsapp />
             </span>
             <span>
-              <a href='https://www.instagram.com/solstudiosdesign/' target="_blank" rel="noreferrer">@lebuenodesigner</a><FiInstagram />
+              <a href='https://www.instagram.com/lebuenodesign/' target="_blank" rel="noreferrer">@lebuenodesign</a><FiInstagram />
             </span>
             <span>
               <a href='mailto:hello@lebueno.com.br' target="_blank" rel="noreferrer">hello@lebueno.com.br</a><FiMail />
