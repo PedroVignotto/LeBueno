@@ -29,7 +29,7 @@ export default function Contact() {
   const [find, setFind] = useState('')
   const [doubt, setDoubt] = useState('')
 
-  const formError = !name || !lastName || !email || !whatsApp || !city || !meeting || !brand || !segment || !brandDetails || !site || !employees || !utilization || !materials || !find || !doubt
+  const formError = !name || !lastName || !email || !whatsApp || !city || !meeting || !brand || !segment || !brandDetails || !site || !employees || !utilization || !materials || !find
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>): Promise<void> => {
     event.preventDefault()
@@ -181,7 +181,7 @@ export default function Contact() {
           setState={setFind}
         />
         <Textarea
-          label="tem alguma dúvida que possa te ajudar? *"
+          label="tem alguma dúvida que possa te ajudar?"
           description="Caso prefira, fique a vontade para entrar em contato comigo via WhatsApp: (11) 93705-4095 =)"
           name="doubt"
           state={doubt}
