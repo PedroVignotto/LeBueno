@@ -22,7 +22,7 @@ export default function Services() {
           <div>
             <Button>identidade visual</Button>
             <p>Muito mais do que um logotipo. Uma identidade visual é um conjunto de variações do seu logo, tipografias, paletas de cores, elementos de design e padrões estrategicamente escolhidos que capturam quem você é como empresa e deixa seu público com uma impressão duradoura.</p>
-            <p>Uma idetidade visual bem definida, criada com intenção e afeto, gera diferenciação dos demais, reconhecimento para sua empresa e consequentemente ajuda a sua marca a alcançar os clientes ideais.</p>
+            <p>Uma identidade visual bem definida, criada com intenção e afeto, gera diferenciação dos demais, reconhecimento para sua empresa e consequentemente ajuda a sua marca a alcançar os clientes ideais.</p>
             <p>Juntas, vamos traduzir e transmitir a essência e personalidade da sua marca com elementos visuais únicos e criativos.</p>
             <p>O resultado? Uma marca que você se sente confiante para compartilhar online e offline nos próximos anos.</p>
           </div>
